@@ -1,0 +1,121 @@
+:root {
+  --clr-red:hsl(0, 78%, 62%);
+  --clr-cyan:hsl(180, 62%, 55%);
+  --clr-orange:hsl(34, 97%, 64%);
+  --clr-blue:hsl(212, 86%, 64%);
+
+  --clr-grey-500:hsl(234, 12%, 34%);
+  --clr-grey-400:hsl(212, 6%, 44%);
+  --clr-white:hsl(0, 0%, 100%);
+
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: 'Poppins';
+    min-height: 100dvh;
+    font-size:15px ;
+    background-color: var(--clr-white);
+
+  }
+.first-head{
+font-weight: 200;
+}
+.second-head{
+font-weight:700 ;
+}
+header{
+  
+  margin-block-start: 6rem;
+  margin-block-end: 6rem;
+  text-align: center;
+}
+h1{
+  color: var(--clr-grey-500);
+  font-size: 38px;
+  margin-block-end: 2rem;
+
+}
+header>p{
+  color:var(--clr-grey-400);
+  font-weight: 400;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(4,0.5fr);
+  gap: 20px;
+  justify-items: center;
+  padding-inline-start: 115px;
+  padding-inline-end: 115px;
+  padding-block-end: 6rem;
+}
+.team-builder{
+grid-template-columns: 2/3;
+grid-row: span 2;
+border-top: 5px solid var(--clr-red);
+}
+.supervisor{
+ 
+grid-area: 2/1/4/2;
+border-top: 5px solid var(--clr-cyan);
+}
+.karma{
+  
+grid-area: 3/2/5/3;
+border-top: 5px solid var(--clr-orange);
+}
+.calculator{
+  grid-area: 2/3/4/4;
+  border-top: 5px solid var(--clr-blue);
+
+}
+.card{
+  background-color: var(--clr-white);
+  block-size: 240px;
+  inline-size: 353px;
+  box-shadow: 0px 5px 9px -2px #B1B5A8;;
+  padding: 30px 30px;
+  border-radius: 5px;
+  color: var(--clr-grey-500);
+  font-size:15px ;
+}
+img{
+    float: right;
+    margin-block-start: 1.5rem;
+}
+.card>p{
+  font-weight: 400;
+}
+h2{
+  font-weight: 600;
+}
+@media(max-width:23.4375rem){
+  .container{
+    display: block;
+    padding:20px 20px;
+  }
+  .card{
+    margin-block-start: 20px;
+    margin-block-end: 20px;
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+    inline-size: 333px;
+  }
+  header{
+  margin-block-end: 2rem;
+  padding-inline-start:10px ;
+  padding-inline-end: 10px;
+  }
+  h1{
+    font-size: 25px;
+  }
+  header>p{
+    font-size: 15px;
+    padding-inline-start:20px ;
+    padding-inline-end: 20px;
+  }
+}

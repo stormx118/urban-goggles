@@ -83,9 +83,11 @@ border-top: 5px solid var(--clr-orange);
   border-radius: 5px;
   color: var(--clr-grey-500);
   font-size:15px ;
+  display:flex;
+  flex-direction:column;
 }
 img{
-    float: right;
+    align-self:flex-end;
     margin-block-start: 1.5rem;
 }
 .card>p{

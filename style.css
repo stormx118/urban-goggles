@@ -15,7 +15,7 @@
     box-sizing: border-box;
   }
   body{
-    font-family: 'Poppins';
+    font-family: 'Poppins','San serif';
     min-height: 100dvh;
     font-size:15px ;
     background-color: var(--clr-white);
@@ -78,7 +78,7 @@ border-top: 5px solid var(--clr-orange);
   background-color: var(--clr-white);
   block-size: 240px;
   inline-size: 343px;
-  box-shadow: 0px 5px 9px -2px #B1B5A8;;
+  box-shadow: 0px 5px 9px -2px #B1B5A8;
   padding: 30px 30px;
   border-radius: 5px;
   color: var(--clr-grey-500);
